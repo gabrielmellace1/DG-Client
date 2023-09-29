@@ -28,8 +28,7 @@ jobs:
         cache: 'npm'
         lfs: true
     - name: Checkout LFS objects
-      run: git lfs checkout
-           git lfs pull
+      run:  git lfs pull
 
 
 
