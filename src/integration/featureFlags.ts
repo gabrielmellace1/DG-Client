@@ -12,6 +12,8 @@ export const initializeFeatureFlags = callOnce(async () => {
   let ff = defaultFeatureFlagsState as FeatureFlagsResult
 
   try {
+    const explorerFeatureFlags = 'http://192.168.0.21:3000'
+
     ff = await fetchFlags({ applicationName: ['explorer'] })
   } catch (err) {
     console.error('Error fetching feature flags', err)

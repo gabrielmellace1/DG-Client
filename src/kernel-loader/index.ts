@@ -215,6 +215,8 @@ async function getVersions(flags: FeatureFlagsResult) {
 async function initKernel() {
   const container = document.getElementById('gameContainer') as HTMLDivElement
 
+  const explorerFeatureFlags = 'http://192.168.0.21:3000'
+
   const flags = await fetchFlags({ applicationName: 'explorer' })
 
   await getVersions(flags)
