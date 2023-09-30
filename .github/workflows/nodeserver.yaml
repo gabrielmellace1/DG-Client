@@ -28,9 +28,7 @@ jobs:
         cache: 'npm'
     - run: cp -R /home/github-ci-cd/backup/unity-engine/ /var/www/DG-Clientv2/actions-runner/_work/DG-Client/DG-Client/public/
     - run: | 
-            cp .env.development .env
             npm install            
-            npm run start:linked
     
       
 
