@@ -138,4 +138,59 @@
 [33mae0cd9a[m chore: show versions in tooltip
 [33m20af28f[m chore: docs (#52)
 [33m6009bac[m chore: better tracking and static site generation (#51)
-[33mad0dec7[m chor
+[33mad0dec7[m chore: add more detailed info to rollbar (#49)
+[33m5123c4c[m chore: add clouflare analytics to measure loading times, fix delighted (#48)
+[33m6e17c24[m fix: issue 46 (#47)
+[33md5bcec7[m chore: report errors to rollbar (#44)
+[33md3bbc09[m fix: update delighted (#42)
+[33mfb98811[m chore: add context to rollbar just in case
+[33mbbc1c59[m Merge branch 'main' of github.com:decentraland/explorer-website
+[33m5b43d0a[m fix kernel path
+[33m0c217b2[m Update README.md
+[33mff61ecd[m migrate to kernel repository
+[33m901ee9a[m chore: update versions (#40)
+[33ma6c2178[m chore: prevent breaking DWH (#39)
+[33m645a9e8[m fix: analytics, user error reporting and auto-login. feat: select network using query param (#36)
+[33m57e48a2[m Fix Segment Snippet and remove Google Tag Manager
+[33m0568cf7[m fix: automatic pipeline
+[33mcd95321[m Update analytics.ts
+[33m7d17a4e[m erge branch 'main' of github.com:decentraland/explorer-website
+[33m5e6a4fd[m fix url param loading
+[33mcd75435[m Update README.md
+[33m90b8acc[m inform versions to rollbar
+[33m471ea9e[m set all rollouts
+[33mbee96ab[m Merge branch 'main' of github.com:decentraland/explorer-website
+[33m02ecb2c[m rollout to play.zone
+[33m37a4df6[m Update README.md
+[33mcfe9ba9[m use new event emitter
+[33mcc86da6[m test deployments with status
+[33m80b54a0[m show all deployment statuses debug info
+[33mff46bfb[m test (#32)
+[33m32d26de[m Update README.md
+[33ma3d4809[m Update README.md
+[33me8461eb[m use correct rollouts
+[33m746716e[m enable usage of rollouts
+[33m77a1383[m Update README.md
+[33m241451b[m chore: use new pipeline (#27)
+[33mc4b9f8f[m chore: test PR pipeline (#21)
+[33m4fc506e[m chore: update website from explorer (#17)
+[33m4d696c1[m fix: versions in paths and rollbar (#13)
+[33m9e2a747[m fix url
+[33mcb42120[m fix root urls
+[33mfc73a5b[m fix website url
+[33m4b6b9cf[m Remove post install (#4)
+[33mdf2aed0[m Create dependabot.yml (#3)
+[33m98248a2[m Merge pull request #2 from decentraland/feat/add-images
+[33m8a0a44e[m delete unused files
+[33mba9cb5c[m src images
+[33m71d816f[m add images
+[33m0518cf5[m Merge pull request #1 from decentraland/feat/add-publication
+[33m775df19[m use npm 6
+[33m9d6045d[m reintroduce package-lock
+[33mb6d7165[m test
+[33m4a92b18[m fix package lock
+[33m4ba3788[m enable action for pr
+[33m65d3caf[m add oddish
+[33m76d0fd6[m add package json
+[33md7a2222[m first commit, bring code from explorer website
+[33m3a0d1fa[m Initial commit
