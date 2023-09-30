@@ -28,10 +28,9 @@ jobs:
         cache: 'npm'
     - run: cp -R /home/github-ci-cd/backup/unity-engine/ /var/www/DG-Clientv2/actions-runner/_work/DG-Client/DG-Client/public/
     - run: | 
-            npm install
             cp .env.development .env
-            export NODE_OPTIONS=--openssl-legacy-provider
-            npm run build
+            npm install            
+            npm run start:linked
     
       
 
