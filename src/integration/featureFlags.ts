@@ -5,10 +5,11 @@ import { store } from '../state/redux'
 import { defaultFeatureFlagsState } from '../state/types'
 import { callOnce } from '../utils/callOnce'
 
+
 /**
  * Fetches feature flags from the server and stores them in the redux store.
  */
-export const initializeFeatureFlags = callOnce(async () => {
+/* export const initializeFeatureFlags = callOnce(async () => {
   let ff = defaultFeatureFlagsState as FeatureFlagsResult
 
   try {
@@ -22,4 +23,26 @@ export const initializeFeatureFlags = callOnce(async () => {
   store.dispatch(setFeatureFlags(ff))
 
   return ff
-})
+}) */
+
+// GABE CHANGE
+
+export const initializeFeatureFlags = callOnce(async () => {
+  let ff = defaultFeatureFlagsState as FeatureFlagsResult;
+
+  try {
+    const response = await fetch('/explorer.json');
+    if (response.ok) {
+      ff = await response.json();
+    } else {
+      console.error('Error loading explorer.json', response.status, response.statusText);
+    }
+  } catch (err) {
+    console.error('Error fetching explorer.json', err);
+  }
+
+  store.dispatch(setFeatureFlags(ff));
+
+  return ff;
+});
+

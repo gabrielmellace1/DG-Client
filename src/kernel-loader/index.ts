@@ -217,8 +217,23 @@ async function initKernel() {
 
   const explorerFeatureFlags = 'http://192.168.0.21:3000'
 
-  const flags = await fetchFlags({ applicationName: 'explorer' })
 
+
+/*   const flags = await fetchFlags({ applicationName: 'explorer' }) */
+
+// GABE CHANGE
+let flags;
+  try {
+    const response = await fetch('/explorer.json');
+    if (response.ok) {
+      flags = await response.json();
+    } else {
+      console.error('Error loading explorer.json', response.status, response.statusText);
+    }
+  } catch (err) {
+    console.error('Error fetching explorer.json', err);
+  }
+// GABE CHANGE
   await getVersions(flags)
 
   const kernel = await injectKernel({
